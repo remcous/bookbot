@@ -17,6 +17,7 @@ RUN cd Python-3.10.8 && ./configure --enable-optimizations && make && make altin
 
 # Copy our code into the image
 COPY main.py main.py
+COPY stats.py stats.py
 
 # Copy our data dependencies
 COPY books/ books/
